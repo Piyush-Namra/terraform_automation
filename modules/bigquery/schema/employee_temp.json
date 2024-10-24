@@ -1,0 +1,50 @@
+[
+    {
+      "name": "First_Name",
+      "mode": "NULLABLE",
+      "type": "STRING",
+      "description": ""
+    },
+    {
+      "name": "Gender",
+      "mode": "NULLABLE",
+      "type": "STRING",
+      "description": ""
+    },
+    {
+      "name": "Start_Date",
+      "mode": "NULLABLE",
+      "type": "STRING",
+      "description": ""
+    },
+    {
+      "name": "Salary",
+      "mode": "NULLABLE",
+      "type": "STRING",
+      "description": ""
+    },
+    {
+      "name": "Last_Login_Time",
+      "mode": "NULLABLE",
+      "type": "STRING",
+      "description": ""
+    },
+    {
+      "name": "Bonus_Percent",
+      "mode": "NULLABLE",
+      "type": "STRING",
+      "description": ""
+    },
+    {
+      "name": "Senior_Management",
+      "mode": "NULLABLE",
+      "type": "STRING",
+      "description": ""
+    },
+    {
+      "name": "Team",
+      "mode": "NULLABLE",
+      "type": "STRING",
+      "description": ""
+    }
+  ]

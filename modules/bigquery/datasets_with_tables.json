@@ -1,0 +1,22 @@
+[
+    {
+        "datasetId": "piyush",
+        "datasetFriendlyName": "piyush",
+        "datasetDescription": "these are a dummy tables",
+        "tables": [
+            {
+                "tableId": "Individual_Incident_hist",
+                "tableSchemaPath": "schema/Individual_Incident_hist.json",
+                "deletionProtection": "false",
+                "kmsKeyName": "projects/playpen-740076/locations/europe-west1/keyRings/my-key-ring8/cryptoKeys/my-crypto-key"
+
+            },
+            {
+                "tableId": "employee_temp",
+                "tableSchemaPath": "schema/employee_temp.json",
+                "deletionProtection": "false",
+                "kmsKeyName": "projects/playpen-740076/locations/europe-west1/keyRings/my-key-ring8/cryptoKeys/my-crypto-key"
+            }
+        ]
+    }
+]   

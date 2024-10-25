@@ -7,7 +7,7 @@ locals {
         datasetId              = dataset["datasetId"]
         tableId                = table["tableId"]
         tableSchemaPath        = table["tableSchemaPath"]
-        encryptionConfiguration = try(table["kmsKeyName"], null)
+        # encryptionConfiguration = try(table["kmsKeyName"], null)
         partitionType          = try(table["partitionType"], null)
         partitionField         = try(table["partitionField"], null)
         expirationMs           = try(table["expirationMs"], null)

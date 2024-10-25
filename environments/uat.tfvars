@@ -1,9 +1,6 @@
-# project_id  = "uat-project-id"
-# dataset_id  = "uat_dataset"
-# table_id    = "uat_table"
-# location    = "US"
-# schema_file = "schema/uat_schema.json"
-# labels = {
-#   environment = "uat"
-#   owner       = "team-uat"
-# }
+# GCP Project ID
+project_id = "playpen-b460a8"
+region = "europe-west1"
+location = "EU"
+# # Labels for resources
+labels = {environment = "uat"}

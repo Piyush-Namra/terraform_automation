@@ -1,1 +1,1 @@
-google_credentials_file = "keys/playpen-740076-bdbf604b5ae4.json"
+google_credentials_file = "./keys/playpen-b460a8-06ddef3ed4e1.json"

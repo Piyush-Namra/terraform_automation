@@ -7,9 +7,9 @@ resource "google_bigquery_table" "bq_tables" {
   table_id   = each.value["tableId"]
   clustering = each.value["clustering"]
   deletion_protection = each.value["deletionProtection"]  
-  encryption_configuration {
-    kms_key_name = each.value["encryptionConfiguration"]
-  }
+  # encryption_configuration {
+  #   kms_key_name = each.value["encryptionConfiguration"]
+  # }
 
   dynamic "time_partitioning" {
     for_each = each.value["partitionType"] != null ? [1] : []

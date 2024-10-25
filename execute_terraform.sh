@@ -42,14 +42,14 @@ for KEY_FILE in "$KEY_DIR"/*.json; do
 
         if [ -z "$WORKSPACE_EXISTS" ]; then
             echo "Creating new workspace for project: $PROJECT_ID"
-            terraform workspace new "$PROJECT_ID"
+            terraform workspace new uat
         else
             echo "Switching to workspace: $PROJECT_ID"
-            terraform workspace select "$PROJECT_ID"
+            terraform workspace select uat
         fi
         # Run Terraform
         terraform init -migrate-state
-        terraform apply -auto-approve
+        terraform apply -var-file="environments/uat.tfvars" -auto-approve
 
         if [ $? -ne 0 ]; then
             echo "Terraform deployment failed for project: $PROJECT_ID"

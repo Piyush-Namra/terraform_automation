@@ -8,6 +8,7 @@
                 "tableId": "Individual_Incident_hist",
                 "tableSchemaPath": "schema/Individual_Incident_hist.json",
                 "deletionProtection": "false"
+
             },
             {
                 "tableId": "employee_temp",

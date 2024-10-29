@@ -6,11 +6,7 @@ resource "google_bigquery_table" "bq_tables" {
   dataset_id = each.value["datasetId"]
   table_id   = each.value["tableId"]
   clustering = each.value["clustering"]
-  deletion_protection = each.value["deletionProtection"]  
-  # encryption_configuration {
-  #   kms_key_name = each.value["encryptionConfiguration"]
-  # }
-
+  deletion_protection = each.value["deletionProtection"] 
   dynamic "time_partitioning" {
     for_each = each.value["partitionType"] != null ? [1] : []
 
@@ -23,5 +19,7 @@ resource "google_bigquery_table" "bq_tables" {
   }
 
   schema = file("${path.module}/../${each.value["tableSchemaPath"]}")
-
+  encryption_configuration {
+    kms_key_name = var.kms_key_self_link
+  }
 }

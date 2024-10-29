@@ -7,13 +7,13 @@ locals {
         datasetId              = dataset["datasetId"]
         tableId                = table["tableId"]
         tableSchemaPath        = table["tableSchemaPath"]
-        # encryptionConfiguration = try(table["kmsKeyName"], null)
         partitionType          = try(table["partitionType"], null)
         partitionField         = try(table["partitionField"], null)
         expirationMs           = try(table["expirationMs"], null)
         requirePartitionFilter = try(table["requirePartitionFilter"], null)
         clustering             = try(table["clustering"], [], null)
         deletionProtection     = table["deletionProtection"]
+        # kmsKeyName             = table["kmsKeyName"]
       }
     ]
   ])

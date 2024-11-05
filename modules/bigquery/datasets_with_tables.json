@@ -7,13 +7,22 @@
             {
                 "tableId": "Individual_Incident_hist",
                 "tableSchemaPath": "schema/Individual_Incident_hist.json",
-                "deletionProtection": "false"
-
+                "deletionProtection": "false",
+                "labels": 
+                {
+                    "network": "non-prod",
+                    "team": "analytics"
+                }
             },
             {
                 "tableId": "employee_temp",
                 "tableSchemaPath": "schema/employee_temp.json",
-                "deletionProtection": "false"
+                "deletionProtection": "false",
+                "labels":
+                {
+                    "network": "prod",
+                    "team": "finance"
+                }
             }
         ]
     }

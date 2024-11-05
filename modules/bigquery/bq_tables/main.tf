@@ -2,7 +2,7 @@ resource "google_bigquery_table" "bq_tables" {
   for_each = { for idx, table in local.tables_flattened : "${table["datasetId"]}_${table["tableId"]}" => table }
 
   project    = var.project_id
-  labels     = var.labels
+  labels     = each.value.labels
   dataset_id = each.value["datasetId"]
   table_id   = each.value["tableId"]
   clustering = each.value["clustering"]

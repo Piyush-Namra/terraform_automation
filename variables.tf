@@ -26,6 +26,7 @@ variable "labels" {
 # KMS Variables
 variable "kms_keyring_name" {
   type = string
+  default = ""
 }
 
 variable "kms_location" {
@@ -35,6 +36,7 @@ variable "kms_location" {
 
 variable "kms_key_name" {
   type = string
+  default = ""
 }
 
 variable "kms_purpose" {
